@@ -17,7 +17,7 @@ module Rack
                      
     set :max_age, 365 * 24 * 60 * 60
     set :views, ::File.join(::File.dirname(__FILE__), 'rack-fontserve/views')
-    set :demo, true
+    set :demo, false
     
     not_found do
       [404, '']
