@@ -26,7 +26,7 @@ class Rack::Fontserve::Font
   
   # Retruns a list of available formats
   def formats
-    @formats ||= Dir[File.join(path, "#{name}.{otf,svg,ttf,woff,eot}")].map {|file| File.extname(file)[1..-1] }.sort
+    @formats ||= Dir[File.join(path, "#{name}.{otf,svg,ttf,woff,woff2,eot}")].map {|file| File.extname(file)[1..-1] }.sort
   end
   
   # Returns the path to the font file in given format. Raises InvalidFormatError if the font is not available in this format

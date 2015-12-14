@@ -9,7 +9,8 @@ module Rack
     
     CONTENT_TYPES = {'ttf' => 'font/truetype', 
                      'otf' => 'font/opentype', 
-                     'woff' => 'font/woff', 
+                     'woff' => 'font/woff',
+										 'woff2' => 'font/woff2',
                      'eot' => 'application/vnd.ms-fontobject',
                      'svg' => 'image/svg+xml',
                      'css' => 'text/css;charset=utf-8'}
