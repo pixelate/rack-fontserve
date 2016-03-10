@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "rack-fontserve"
   
-  s.add_dependency 'sinatra', "~> 1.4.5"
+  s.add_dependency 'sinatra', "=> 1.4.5"
   
   s.add_development_dependency 'rack-test', "~> 0.5.7"
   s.add_development_dependency 'shoulda', "~> 2.11.3"
