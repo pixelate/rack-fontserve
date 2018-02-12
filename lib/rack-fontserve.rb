@@ -37,9 +37,8 @@ module Rack
       end
       
       def set_cache
-        headers 'Cache-Control' => "max-age=0, no-cache, no-store, must-revalidate",
-								'Pragma' => "no-cache",
-                'Expires' => "Wed, 11 Jan 1984 05:00:00 GMT",
+        headers 'Cache-Control' => "public, max-age=#{Rack::Fontserve.max_age}",
+                'Expires' => (Time.now + Rack::Fontserve.max_age).httpdate,
                 'Access-Control-Allow-Origin' => '*'        
       end
 
